@@ -1,11 +1,11 @@
 module.exports = {
-	title: "Eleventy Web Starter",
+	title: "Julian Iff",
 	description:
-		"Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS",
+		"Testproject for 11ty and headless cms",
 	url: process.env.SITE_URL,
-	author: "Chris Collins",
+	author: "Julian Iff",
 	meta_data: {
-		twitter: "@scottishstoater",
+		twitter: "@taschenlampe",
 		opengraph_default: "/static/opengraph-default.jpg",
 	},
 	env: process.env.ELEVENTY_ENV === "production",
