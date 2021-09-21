@@ -4,23 +4,17 @@
     {% include "head.njk" %}
     {% if site.env %}
       <!-- capture the CSS content as a Liquid variable -->
-      {% set css %}{% include "styles.min.css" %}{% endset %}
+      {% set css %}{% include "../static/styles.css" %}{% endset %}
       <style> 
         {{ css | safe }}
       </style>
     {% else %}
-    <link rel="stylesheet" href="/static/styles.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
     {% endif %}
-    <script type="importmap">
-      {
-        "imports": {
-          "/index.js": "https://unpkg.com/iff-design-system@latest/lib/index.js?module"
-        }
-      }
-    </script>
-    <script type="module">
-      import '/index.js';
-    </script>
+
+    {% include "font.njk" %}
+    {% include "design-system.njk" %}
+
 
 		<!-- Try and serve Google Fonts in the most efficent way possible -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,7 +23,7 @@
 			<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" type="text/css"/>
 		</noscript>
   </head>
-  <body>
+  <body theme="blue-gradiant">
     <a href="#main" class="skip-link">Skip to main content</a>
     {{ content | safe }}
   </body>
