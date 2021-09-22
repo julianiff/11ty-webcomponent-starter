@@ -1,6 +1,6 @@
 <h1><a href="https://eleventywebstarter.netlify.app"><strong>Eleventy Web Starter</strong></a></h1>
 
-<em>Eleventy · HTML · CSS · Javascript</em>
+<em>Eleventy · HTML · CSS · Javascript · crystallize Headless Pages </em>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c4a310ef-93cc-4e5d-aa61-f78acfbac197/deploy-status)](https://app.netlify.com/sites/reverent-varahamihira-6dbce2/deploys)
 
